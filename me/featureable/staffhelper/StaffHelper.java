@@ -4,13 +4,18 @@ import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import java.io.UnsupportedEncodingException;
+
 public class StaffHelper extends JavaPlugin {
 
-    public String shheader = ChatColor.translateAlternateColorCodes('&', ChatColor.BOLD + "&cStaffHelper");
+    private char doubleArrow = '\u00BB';
+    public String shheadern = ChatColor.translateAlternateColorCodes('&', "&cStaffHelper >>");
+    public String shheader = ChatColor.translateAlternateColorCodes('&', "&cStaffHelper " + doubleArrow);
 
     @Override
     public void onEnable() {
-        Bukkit.getConsoleSender().sendMessage(shheader + " Starting.");
+        Bukkit.getConsoleSender().sendMessage(shheadern);
+        
     }
 
     @Override
