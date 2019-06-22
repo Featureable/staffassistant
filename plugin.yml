@@ -1,0 +1,24 @@
+main: me.featureable.staffhelper.StaffHelper
+name: StaffHelper
+version: 1.0.0
+author: Featureable
+description: StaffHelper is a a new way of staff management. It fits all your staff commands into a beautiful gui.
+website: www.featureable.cf
+
+commands:
+  punish:
+    description: Punish a player.
+
+permissions:
+  staffhelper.mute:
+    description: Permission to mute players.
+    default: op
+  staffhelper.kick:
+    description: Permission to kick players.
+    default: op
+  staffhelper.ban:
+    description: Permission to ban players.
+    default: op
+  staffhelper.blacklist:
+    description: Permission to blacklist players.
+    default: op
