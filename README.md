@@ -1,2 +1,0 @@
-# staffhelper
-StaffHelper source code.
