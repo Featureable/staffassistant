@@ -1,10 +1,9 @@
 package me.featureable.staffhelper;
 
+import me.featureable.staffhelper.commands.PunishCommand;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
-
-import java.io.UnsupportedEncodingException;
 
 public class StaffHelper extends JavaPlugin {
 
@@ -15,7 +14,8 @@ public class StaffHelper extends JavaPlugin {
     @Override
     public void onEnable() {
         Bukkit.getConsoleSender().sendMessage(shheadern);
-        
+
+        new PunishCommand(this);
     }
 
     @Override
