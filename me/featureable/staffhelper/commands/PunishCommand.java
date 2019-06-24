@@ -1,6 +1,7 @@
 package me.featureable.staffhelper.commands;
 
 import me.featureable.staffhelper.StaffHelper;
+import me.featureable.staffhelper.gui.PunishUI;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -28,8 +29,13 @@ public class PunishCommand implements CommandExecutor {
             return true;
         }
 
+        if (args.length < 1) {
+            sender.sendMessage(plugin.shheader + " Please enter a player name.");
+            return true;
+        }
+
         Player player = (Player) sender;
-        player.sendMessage("DSGFSDG");
+        player.openInventory(PunishUI.GUI(player));
         return true;
     }
 }

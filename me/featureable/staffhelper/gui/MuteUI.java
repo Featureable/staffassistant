@@ -7,14 +7,14 @@ import org.bukkit.entity.Player;
 import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
-public class PunishUI {
+public class MuteUI {
 
     public static Inventory inv;
     public static String inventory_name;
     public static int inv_rows = 3 * 9;
 
     public static void initialize() {
-        inventory_name = Utils.chat("&cPunish");
+        inventory_name = Utils.chat("&cMute Player");
 
         inv = Bukkit.createInventory(null, inv_rows);
     }
@@ -22,7 +22,7 @@ public class PunishUI {
     public static Inventory GUI(Player p) {
         Inventory toReturn = Bukkit.createInventory(null, inv_rows, inventory_name);
 
-        Utils.createItemByte(inv, Material.STAINED_GLASS_PANE, 5, 1, 11, "&eMute", "&cMute a player");
+        Utils.createItemByte(inv, Material.STAINED_GLASS_PANE, 5, 1, 11, "&eMute", "&cMufsdsdfte a player");
         Utils.createItemByte(inv, Material.STAINED_GLASS_PANE, 4, 1, 13, "&6Kick", "&cKick a player");
         Utils.createItemByte(inv, Material.STAINED_GLASS_PANE, 1, 1, 15, "&cBan", "&cPermanently or temporarily ban a player");
         Utils.createItemByte(inv, Material.STAINED_GLASS_PANE, 14, 1, 17, "&4Blacklist", "&cBlacklist a player");
@@ -58,8 +58,7 @@ public class PunishUI {
 
     public static void clicked(Player p, int slot, ItemStack clicked, Inventory inv) {
         if (clicked.getItemMeta().getDisplayName().equals(Utils.chat("&eMute"))) {
-            p.closeInventory();
-            p.openInventory(MuteUI.GUI(p));
+            p.sendMessage("Mute");
         }
     }
 }
