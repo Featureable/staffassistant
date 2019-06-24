@@ -4,8 +4,6 @@ import me.featureable.staffassistant.commands.ClearChat;
 import me.featureable.staffassistant.commands.StaffChat;
 import me.featureable.staffassistant.commands.ToggleChat;
 import me.featureable.staffassistant.listeners.ChatListener;
-import me.featureable.staffassistant.listeners.JoinListener;
-import me.featureable.staffassistant.listeners.QuitListener;
 import me.featureable.staffassistant.utils.Utils;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -29,8 +27,6 @@ public class StaffAssistant extends JavaPlugin {
     public void onEnable() {
         Bukkit.getConsoleSender().sendMessage(shheadern + Utils.chat(" Enabled"));
 
-        new JoinListener(this);
-        new QuitListener(this);
         new ChatListener(this);
         new StaffChat(this);
         new ClearChat(this);
