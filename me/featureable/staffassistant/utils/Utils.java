@@ -1,4 +1,4 @@
-package me.featureable.staffhelper.utils;
+package me.featureable.staffassistant.utils;
 
 import org.bukkit.ChatColor;
 

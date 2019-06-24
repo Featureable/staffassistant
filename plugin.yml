@@ -1,26 +1,28 @@
-main: me.featureable.staffhelper.StaffUtils
-name: StaffUtils
+main: me.featureable.staffassistant.StaffAssistant
+name: StaffAssistant
 version: 1.0.0
 author: Featureable
-description: StaffUtils is a a new way of staff management. It fits all your staff commands into a beautiful gui.
+description: The better way to moderate your server.
 website: www.featureable.cf
 
 commands:
-  punish:
-    description: Punish a player.
-  test:
-    description: test
+  clearchat:
+    aliases: [cc]
+    description: Clear the chat.
+  staffchat:
+    aliases: [sc]
+    description: Enable/Disable staff chat.
+  togglechat:
+    aliases: [tc, chat]
+    description: Enable/Disable chat.
 
 permissions:
-  staffhelper.mute:
-    description: Permission to mute players.
+  sa.bypass:
+    description: Bypass disabled chat.
     default: op
-  staffhelper.kick:
-    description: Permission to kick players.
+  sa.staffchat:
+    description: Allows a player to see and message staffchat.
     default: op
-  staffhelper.ban:
-    description: Permission to ban players.
-    default: op
-  staffhelper.blacklist:
-    description: Permission to blacklist players.
+  sa.togglechat:
+    description: Toggle chat.
     default: op
