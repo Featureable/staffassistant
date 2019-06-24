@@ -1,13 +1,15 @@
-main: me.featureable.staffhelper.StaffHelper
-name: StaffHelper
+main: me.featureable.staffhelper.StaffUtils
+name: StaffUtils
 version: 1.0.0
 author: Featureable
-description: StaffHelper is a a new way of staff management. It fits all your staff commands into a beautiful gui.
+description: StaffUtils is a a new way of staff management. It fits all your staff commands into a beautiful gui.
 website: www.featureable.cf
 
 commands:
   punish:
     description: Punish a player.
+  test:
+    description: test
 
 permissions:
   staffhelper.mute:
