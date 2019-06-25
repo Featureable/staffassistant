@@ -2,7 +2,7 @@ main: me.featureable.staffassistant.StaffAssistant
 name: StaffAssistant
 version: 1.0.0
 author: Featureable
-description: The better way to moderate your server.
+description: Enhance staffing on your server.
 website: www.featureable.cf
 
 commands:
@@ -18,11 +18,11 @@ commands:
 
 permissions:
   sa.bypass:
-    description: Bypass disabled chat.
+    description: Allows a player to bypass disabled chat.
     default: op
   sa.staffchat:
-    description: Allows a player to see and message staffchat.
+    description: Allows a player to see and chat in staffchat.
     default: op
   sa.togglechat:
-    description: Toggle chat.
+    description: Allows a player to toggle chat.
     default: op

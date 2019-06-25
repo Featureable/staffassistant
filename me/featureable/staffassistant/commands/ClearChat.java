@@ -20,6 +20,7 @@ public class ClearChat implements CommandExecutor {
     @Override
     public boolean onCommand(CommandSender sender, Command cmd, String label, String[] args) {
         if (!sender.hasPermission("sa.clearchat")) {
+            sender.sendMessage(plugin.shheader + ChatColor.RED + " You do not have permission to execute this command!");
             return true;
         }
 

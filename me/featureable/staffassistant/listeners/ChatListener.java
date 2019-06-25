@@ -22,7 +22,7 @@ public class ChatListener implements Listener {
     public void onChat(AsyncPlayerChatEvent e) {
         Player p = e.getPlayer();
         if (plugin.chatDisabled) {
-            if (p.hasPermission("sa.bypass")) {
+            if (p.hasPermission("sa.bypass") | p.hasPermission("sa.togglechat")) {
                 e.setCancelled(false);
             } else {
                 e.setCancelled(true);
