@@ -1,6 +1,6 @@
 main: me.featureable.staffassistant.StaffAssistant
 name: StaffAssistant
-version: 1.0.0
+version: 1.0.1
 author: Featureable
 description: Enhance staffing on your server.
 website: www.featureable.cf
